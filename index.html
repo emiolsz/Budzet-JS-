@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budżet domowy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="logo.jpg" alt="Logo" class="top-balance-image" />
+    <div class="top-container-accounting-balance">
+      <h2 id="top-cointainer-information-balance-box">Bilans wynosi zero</h2>
+      <h2 id="top-balance-message"></h2>
+      <p id="top-balance-message"></p>
+    </div>
+    <div class="container-accounting">
+      <div class="container-accounting-input-fields">
+        <div>
+          <h3>Przychody</h3>
+          <input type="text" id="income-name" placeholder="Nazwa przychodu" />
+          <input type="number" min="0" id="income-amount" placeholder="Kwota" />
+          <button class="btn-pointer" id="add-income">Dodaj</button>
+        </div>
+        <div>
+          <h3>Wydatki</h3>
+          <input type="text" id="expense-name" placeholder="Nazwa wydatku" />
+          <input type="number" min="0" id="expense-amount" placeholder="Kwota" />
+          <button class="btn-pointer" id="add-expense">Dodaj</button>
+        </div>
+      </div>
+      <div class="container-accounting-list">
+        <div>
+          <ul class="container-accounting-list-income" id="income-list"></ul>
+          <div class="container-accounting-balance">
+            <p id="income-total"></p>
+          </div>
+        </div>
+        <div>
+          <ul class="container-accounting-list-expense" id="expense-list"></ul>
+          <div class="container-accounting-balance">
+            <p id="expense-total"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
