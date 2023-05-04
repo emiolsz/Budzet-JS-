@@ -2,6 +2,7 @@ const informationBox = document.getElementById("information-balance-box");
 document.getElementById("add-income").addEventListener("click", addIncome);
 document.getElementById("add-expense").addEventListener("click", addExpense);
 
+
 const incomes = [];
 const expenses = [];
 
